@@ -1,0 +1,63 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling Section Hero */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Memenuhi seluruh layar */
+    background-image: url('background.jpg'); /* Ganti dengan gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Styling Konten */
+  .hero-content {
+    text-align: left;
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Styling Gambar PNG */
+  .hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25%; /* Sesuaikan ukuran gambar */
+    z-index: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .hero-image {
+      height: 50%; /* Sesuaikan ukuran gambar untuk mobile */
+    }
+  }
